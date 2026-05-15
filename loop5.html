@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Even and Odd numbers</title>
+</head>
+<body>
+    <h1>Print Even and Odd numbers</h1>
+    <script>
+        var n = prompt("Please enter a number:");
+        var evenNumbers = [];
+        var oddNumbers = [];
+        for(var i = 1; i <= n; i++){
+            if(i % 2 === 0){
+                evenNumbers.push(i);
+            } else {
+                oddNumbers.push(i);
+            }
+        }
+        document.write("Even numbers from 1 to " + n + ": " + evenNumbers.join(", "));
+        document.write("<br>");
+        document.write("Odd numbers from 1 to " + n + ": " + oddNumbers.join(", "));
+    </script>
+</body>
+</html>
